@@ -20,11 +20,13 @@ export default defineConfig({
         items: [
           { text: 'Luna Settings and Features', link: '/settings' },
           { text: 'Installing Plugins', link: '/install-plugins' },
-          { text: 'Plugin Settings', link: '/plugin-settings' }
+          { text: 'Plugin Settings', link: '/plugin-settings' },
+          { text: 'Available Plugins', link: '/plugins' },
         ]
       },
       {
         text: 'Installation',
+        link: '/install/installing',
         items: [
           { text: 'Installing on Windows', link: '/install/windows' },
           { text: 'Installing on Linux', link: '/install/linux' },

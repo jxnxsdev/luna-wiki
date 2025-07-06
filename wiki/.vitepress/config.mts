@@ -13,10 +13,25 @@ export default defineConfig({
 
     sidebar: [
       {
-        text: 'Examples',
+        text: 'Getting Started',
+        link: '/getting-started',
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          { text: 'Installing Plugins', link: '/install-plugins' },
+          { text: 'Luna Settings and Features', link: '/settings' },
+          { text: 'Plugin Settings', link: '/plugin-settings' }
+        ]
+      },
+      {
+        text: 'Installation',
+        items: [
+          { text: 'Installing on Windows', link: '/install/windows' },
+          { text: 'Installing on Linux', link: '/install/linux' },
+          { text: 'Installing on MacOS', link: '/install/mac' }
+        ]
+      },
+      {
+        text: 'Development',
+        items: [
         ]
       }
     ],

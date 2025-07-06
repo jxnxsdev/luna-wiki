@@ -22,4 +22,8 @@ features:
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
 
+## What is TidaLuna?
+
+TidaLuna enhances the TIDAL desktop app with plugin support and extended functionality.
+
 <Contributors />

@@ -33,7 +33,7 @@ Before you start the installation, make sure to close the TIDAL app if it is run
 ## Installation Steps
 
 1. Launch the TidaLuna Installer you downloaded.
-2. The installer will open a web browser window. If it does not open automatically, you can manually open your browser and go to [http://localhost:3013](http://localhost:3013).
+2. The installer will open a web browser window. If it does not open automatically, you can manually open your browser and go to `http://localhost:3013`.
 
 3. Select the version of TidaLuna you want to install. There are different versions available:
 

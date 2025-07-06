@@ -28,6 +28,6 @@ If you already have the Installer launched, you can skip to [Installing TidaLuna
 3. You might run into a warning from Windows Defender SmartScreen. If you do, click on `More info` and then `Run anyway` to proceed.
    This is a standard warning for applications that are not signed or widely recognized by Microsoft.
 4. A terminal window will open, and the Installer will start. If your browser does not automatically open a website,
-   open it manually by visiting [https://localhost:3013](https://localhost:3013).
+   open it manually by visiting `http://localhost:3013`.
 
 You can now follow the following steps to install TidaLuna [here](/install/installing).

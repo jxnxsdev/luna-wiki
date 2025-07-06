@@ -11,7 +11,7 @@ async function fetchJSON(url) {
     if (!res.ok) throw new Error(`${res.status} ${res.statusText}`)
     return await res.json()
   } catch (e) {
-    console.warn(`⚠️ Fehler beim Laden: ${url}`, e.message)
+    console.warn(`⚠️ Error loading: ${url}`, e.message)
     return null
   }
 }
@@ -21,7 +21,7 @@ function getBaseUrl(storeUrl) {
 }
 
 async function main() {
-  console.log('🔄 Lade Plugin-Store-URLs...')
+  console.log('🔄 Loading Plugin-Store-URLs...')
   const raw = await fetch(pluginStoreFile).then(r => r.text())
   const matches = [...raw.matchAll(/addToStores\(["'](.*?)["']\)/g)].map(m => m[1])
 
@@ -51,7 +51,7 @@ async function main() {
 
   await fs.mkdir(path.dirname(OUTPUT), { recursive: true })
   await fs.writeFile(OUTPUT, JSON.stringify(allStores, null, 2))
-  console.log(`✅ ${allStores.length} Plugin-Stores gespeichert unter: ${OUTPUT}`)
+  console.log(`✅ ${allStores.length} Plugin-Stores saved under: ${OUTPUT}`)
 }
 
 main()

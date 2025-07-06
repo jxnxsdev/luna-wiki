@@ -58,7 +58,7 @@ If you already have the Installer launched, you can skip to [Installing TidaLuna
    ./luna-installer
    ```
 
-5. If your browser does not automatically open a website, open it manually by visiting [https://localhost:3013](https://localhost:3013).
+5. If your browser does not automatically open a website, open it manually by visiting `http://localhost:3013`.
 
 You can now follow the following steps to install TidaLuna [here](/install/installing).
 

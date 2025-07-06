@@ -32,7 +32,7 @@ If you already have the Installer launched, you can skip to [Installing TidaLuna
    ```bash
    ./luna-installer
    ```
-4. The installer will start and open a web browser window. If it does not open automatically, you can manually open your browser and go to [http://localhost:3013](http://localhost:3013).
+4. The installer will start and open a web browser window. If it does not open automatically, you can manually open your browser and go to `http://localhost:3013`.
 
 You can now follow the following steps to install TidaLuna [here](/install/installing).
 

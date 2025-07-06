@@ -6,11 +6,11 @@ WORKDIR /app
 # Copy everything (because package.json is at root, VitePress is in wiki/)
 COPY . .
 
-# Build plugin stores
-RUN node wiki/.vitepress/fetch-plugins.mjs
-
 # Enable corepack and install dependencies
 RUN corepack enable && pnpm install
+
+# Build plugin stores
+RUN node wiki/.vitepress/fetch-plugins.mjs
 
 # Build the site (navigate into wiki folder)
 RUN pnpm --filter ./wiki... docs:build

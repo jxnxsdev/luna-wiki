@@ -5,6 +5,7 @@
     "docs:preview": "vitepress preview wiki"
   },
   "dependencies": {
+    "node-fetch": "^3.3.2",
     "vitepress": "^1.6.3"
   }
 }

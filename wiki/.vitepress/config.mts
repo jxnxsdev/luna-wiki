@@ -22,7 +22,12 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/jxnxsdev/luna-wiki' },
+      { icon: 'discord', link: 'discord.gg/jK3uHrJGx4' }
     ]
+  },
+
+  sitemap: {
+    hostname: 'https://luna-wiki.jxnxsdev.me',
   }
 })

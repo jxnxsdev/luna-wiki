@@ -5,21 +5,21 @@ layout: home
 hero:
   name: "TidaLuna Wiki"
   text: "Wiki for the TidaLuna Tidal Mod"
-  tagline: My great project tagline
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: Getting Started
+      link: /getting-started
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: Lorem Ipsum
+      link: /lorem-ipsum
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
+  - title: Installation
+    details: <a href="/install/windows">Installing on Windows</a> <br/> <a href="/install/linux"> Installing on Linux</a> <br/> <a href="/install/mac">Installing on MacOS</a>
+  - title: Getting Started
+    details: <a href="/install-plugins">Installing Plugins</a> <br/> <a href="/settings">Luna Settings and Festures</a> <br/> <a href="/plugin-settings">Plugin Setttings</a>
+  - title: Development
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
 
+<Contributors />

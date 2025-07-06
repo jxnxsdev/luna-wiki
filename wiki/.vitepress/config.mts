@@ -8,7 +8,9 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: 'Getting Started', link: '/getting-started' },
+      { text: 'Plugins', link: '/plugins' },
+      { text: 'Developing Plugins', link: '/development/geting-started' }
     ],
 
     sidebar: [
@@ -31,6 +33,7 @@ export default defineConfig({
       },
       {
         text: 'Development',
+        link: '/development/getting-started',
         items: [
         ]
       }
@@ -39,7 +42,11 @@ export default defineConfig({
     socialLinks: [
       { icon: 'github', link: 'https://github.com/jxnxsdev/luna-wiki' },
       { icon: 'discord', link: 'discord.gg/jK3uHrJGx4' }
-    ]
+    ],
+
+    search: {
+      provider: 'local'
+    }
   },
 
   sitemap: {

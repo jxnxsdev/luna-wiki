@@ -10,8 +10,8 @@ hero:
       text: Getting Started
       link: /getting-started
     - theme: alt
-      text: Lorem Ipsum
-      link: /lorem-ipsum
+      text: Available Plugins
+      link: /plugins
 
 features:
   - title: Installation

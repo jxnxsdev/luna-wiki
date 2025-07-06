@@ -37,13 +37,15 @@ export default defineConfig({
         text: 'Development',
         link: '/development/getting-started',
         items: [
+          { text: 'Getting Started', link: '/development/getting-started' },
+          { text: 'Developer Resources', link: '/development/resources' },
         ]
       }
     ],
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/jxnxsdev/luna-wiki' },
-      { icon: 'discord', link: 'discord.gg/jK3uHrJGx4' }
+      { icon: 'discord', link: 'https://discord.gg/jK3uHrJGx4' }
     ],
 
     search: {

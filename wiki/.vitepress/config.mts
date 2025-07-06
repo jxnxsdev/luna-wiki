@@ -16,8 +16,8 @@ export default defineConfig({
         text: 'Getting Started',
         link: '/getting-started',
         items: [
-          { text: 'Installing Plugins', link: '/install-plugins' },
           { text: 'Luna Settings and Features', link: '/settings' },
+          { text: 'Installing Plugins', link: '/install-plugins' },
           { text: 'Plugin Settings', link: '/plugin-settings' }
         ]
       },

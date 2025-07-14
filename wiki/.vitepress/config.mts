@@ -10,7 +10,7 @@ export default defineConfig({
       { text: 'Home', link: '/' },
       { text: 'Getting Started', link: '/getting-started' },
       { text: 'Plugins', link: '/plugins' },
-      { text: 'Developing Plugins', link: '/development/geting-started' }
+      { text: 'Developing Plugins', link: '/development/getting-started' }
     ],
 
     sidebar: [
@@ -39,6 +39,29 @@ export default defineConfig({
         items: [
           { text: 'Getting Started', link: '/development/getting-started' },
           { text: 'Developer Resources', link: '/development/resources' },
+          { 
+            text: 'TidaLuna Documentation',
+            items: [
+              { text: 'Introduction', link: '/development/documentation/intro' },
+              { 
+                text: 'Core Plugins',
+                items: [
+                  { text: '@luna/lib', link: '/development/documentation/plugins/luna-lib' },
+                  { text: '@luna/ui', link: '/development/documentation/plugins/luna-ui' },
+                  { text: '@luna/dev', link: '/development/documentation/plugins/luna-dev' }
+                ]
+              },
+              {
+                text: 'Guides',
+                items: [
+                  { text: 'Logging', link: '/development/documentation/guides/logging' },
+                  { text: 'Plugin Unloading', link: '/development/documentation/guides/plugin-unloading' },
+                  { text: 'Plugin Settings', link: '/development/documentation/guides/plugin-settings' },
+                  { text: 'Interacting with the Redux Store', link: '/development/documentation/guides/redux-store' }
+                ]
+              }
+            ]
+          },
         ]
       }
     ],

@@ -19,7 +19,7 @@ features:
   - title: Getting Started
     details: <a href="/install-plugins">Installing Plugins</a> <br/> <a href="/settings">Luna Settings and Festures</a> <br/> <a href="/plugin-settings">Plugin Setttings</a>
   - title: Development
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    details: <a href="/development/getting-started">Getting Started with Plugin Development</a> <br/> <a href="/development/documentation/intro">TidaLuna development Documentation</a> <br/> <a href="/development/resources">Useful Resources</a>
 ---
 
 ## What is TidaLuna?

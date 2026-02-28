@@ -30,7 +30,8 @@ export default defineConfig({
         items: [
           { text: 'Installing on Windows', link: '/install/windows' },
           { text: 'Installing on Linux', link: '/install/linux' },
-          { text: 'Installing on MacOS', link: '/install/mac' }
+          { text: 'Installing on MacOS', link: '/install/mac' },
+          { text: 'Legacy Installer (<= 3.0.0)', link: '/install/legacy-v3-and-below' }
         ]
       },
       {
@@ -47,17 +48,22 @@ export default defineConfig({
                 text: 'Core Plugins',
                 items: [
                   { text: '@luna/lib', link: '/development/documentation/plugins/luna-lib' },
+                  { text: '@luna/lib.native', link: '/development/documentation/plugins/luna-lib-native' },
                   { text: '@luna/ui', link: '/development/documentation/plugins/luna-ui' },
-                  { text: '@luna/dev', link: '/development/documentation/plugins/luna-dev' }
+                  { text: '@luna/dev', link: '/development/documentation/plugins/luna-dev' },
+                  { text: '@luna/linux', link: '/development/documentation/plugins/luna-linux' }
                 ]
               },
               {
                 text: 'Guides',
                 items: [
-                  { text: 'Logging', link: '/development/documentation/guides/logging' },
-                  { text: 'Plugin Unloading', link: '/development/documentation/guides/plugin-unloading' },
+                  { text: 'Function Quick Reference', link: '/development/documentation/guides/function-reference' },
                   { text: 'Plugin Settings', link: '/development/documentation/guides/plugin-settings' },
-                  { text: 'Interacting with the Redux Store', link: '/development/documentation/guides/redux-store' }
+                  { text: 'Interacting with the Redux Store', link: '/development/documentation/guides/redux-store' },
+                  { text: 'Context Menu Actions', link: '/development/documentation/guides/context-menu' },
+                  { text: 'Native Modules', link: '/development/documentation/guides/native-modules' },
+                  { text: 'Plugin Unloading', link: '/development/documentation/guides/plugin-unloading' },
+                  { text: 'Logging', link: '/development/documentation/guides/logging' }
                 ]
               }
             ]

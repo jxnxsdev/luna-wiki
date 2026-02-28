@@ -8,34 +8,62 @@ description: Installing TidaLuna on Linux
 
 # Running the Installer on Linux
 
-If you already have the Installer launched, you can skip to [Installing TidaLuna](/install/installing).
+If you already have the installer running, continue in [Installing TidaLuna](/install/installing).
 
 ## Download the Installer
 
 1. Go to the [TidaLuna Installer Releases](https://github.com/jxnxsdev/TidaLuna-Installer/releases/latest) page.
-2. Download the latest `linux-x86_64.tar.xz` file.
-3. Open a terminal and navigate to the directory where you downloaded the file.
-4. Extract the contents of the Tar file using the following command:
-   ```bash
-   tar -xf linux-x86_64.tar.xz
-   ```
-5. You should now find a binary file named `luna-installer`.
+2. Choose one of the Linux builds:
+   - `.deb` package: `installer-linux-x86_64-vX.X.X.deb`
+   - AppImage: `installer-linux-x86_64-vX.X.X.AppImage`
+   - Portable binary: `installer-linux-x86_64-vX.X.X`
 
-## Run the Installer
+## Run using `.deb` (recommended)
 
-1. Open a terminal and navigate to the directory where you extracted the Installer.
-2. You will need to give the installer system access executable permission. Run the following commands:
-   ```bash
-   chmod +x luna-installer
-   ```
-3. Start the installer by executing the following command in the terminal:
-   ```bash
-   ./luna-installer
-   ```
-4. The installer will start and open a web browser window. If it does not open automatically, you can manually open your browser and go to `http://localhost:3013`.
+1. Double-click the `.deb` file and install it with your package manager.
+2. Launch **TidaLuna Installer** from your app menu.
+3. Continue with [Installing TidaLuna](/install/installing).
 
-You can now follow the following steps to install TidaLuna [here](/install/installing).
+## Run using `.AppImage`
+
+1. Open a terminal in the download folder.
+2. Make it executable (if needed):
+
+   ```bash
+   chmod +x installer-linux-x86_64-vX.X.X.AppImage
+   ```
+
+3. Run it:
+
+   ```bash
+   ./installer-linux-x86_64-vX.X.X.AppImage
+   ```
+
+## Run using portable binary
+
+1. Open a terminal in the download folder.
+2. Make it executable (if needed):
+
+   ```bash
+   chmod +x installer-linux-x86_64-vX.X.X
+   ```
+
+3. Run it:
+
+   ```bash
+   ./installer-linux-x86_64-vX.X.X
+   ```
+
+## Optional: Run in CLI mode
+
+```bash
+./installer-linux-x86_64-vX.X.X --headless --list-versions
+./installer-linux-x86_64-vX.X.X --headless --install
+./installer-linux-x86_64-vX.X.X --headless --uninstall
+```
+
+Use `--path "/path/to/tidal/resources"` to target a custom installation path.
 
 ## Troubleshooting
 
-If you encounter any issues during the installation, make sure that you have the necessary permissions to modify the TIDAL app and that you are running the installer with sufficient privileges. You may need to run the installer with `sudo` if you encounter permission errors.
+If you encounter permission errors, make sure the installer file is executable and that you can write to your TIDAL installation path.

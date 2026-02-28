@@ -10,12 +10,13 @@ description: Installing TidaLuna
 
 # Installing TidaLuna
 
-If you haven't already, download the latest version of TidaLuna from the [releases page](https://github.com/jxnxsdev/TidaLuna-Installer/releases/latest).
-You can find installation instructions for your platform below:
+Download the latest installer build from the [TidaLuna Installer Releases](https://github.com/jxnxsdev/TidaLuna-Installer/releases/latest).
+Then follow your platform guide:
 
 - [Installing on Windows](/install/windows)
 - [Installing on Linux](/install/linux)
 - [Installing on MacOS](/install/mac)
+- [Legacy installer guide (v3.0.0 and below)](/install/legacy-v3-and-below)
 
 ## Preparation
 
@@ -30,28 +31,61 @@ If you aren't logged into the TIDAL app yet, we suggest you do so now before pro
 
 Before you start the installation, make sure to close the TIDAL app if it is running.
 
-## Installation Steps
+## Installation Steps (GUI)
 
-1. Launch the TidaLuna Installer you downloaded.
-2. The installer will open a web browser window. If it does not open automatically, you can manually open your browser and go to `http://localhost:3013`.
+1. Launch the installer app/binary you downloaded for your operating system.
+2. In the installer window, select your preferred release channel and version.
+  ![Installer main UI](/assets/images/installer-ui-main-v3.png)
+3. Click **Install** (or **Reinstall** if TidaLuna is already installed).
+4. If needed, enable **Show advanced options** to set a custom install path.
+  ![Installer advanced options](/assets/images/installer-ui-advanced-v3.png)
+5. Wait for the installation log to finish.
+  ![Installer log](/assets/images/installer-ui-log-v3.png)
+6. Open TIDAL. You should now see **Luna Settings** in the menu.
 
-3. Select the version of TidaLuna you want to install. There are different versions available:
+The installer automatically handles:
+- Detecting existing TIDAL installations
+- Removing previous TidaLuna/Neptune installations
+- Downloading and extracting the selected version
+- Applying modifications to TIDAL
+- Signing the application (macOS)
 
-   - **Stable**: This is the latest stable release of TidaLuna.
-   - **Beta**: This version includes the latest features and improvements, but may not be as stable as the stable version.
-   - **Alpha**: This version is built from the latest code and may include experimental features. It is not recommended for regular use.
-     ![img](/assets/images/installer-release-channel.png)
+## Installation Steps (CLI / headless)
 
-4. You can configure advanced options such as the installation path. This is normally not necessary, but you can change it if you want to install TidaLuna in a different location.
-   ![img](/assets/images/installer-advanced-options.png)
+CLI mode is available for automation and advanced usage.
 
-5. Click on the "Install" or "Reinstall" button to start the installation process.
-6. The installer will now download the selected version of TidaLuna and install it on your system. This may take a few seconds depending on your internet connection speed.
+Important: `--headless` must come before other CLI options.
 
-7. Once the installation is complete, you will see a confirmation message. You can now close the installer and launch the TIDAL app as usual.
-8. You should now see a new option called "Luna Settings" when clicking the 3 dots in the top left corner of the TIDAL app.
-   ![img](/assets/images/luna-settings.png)
-9. You can now proceed to install plugins and configure TidaLuna to your liking:
-   - [Installing Plugins](/install-plugins)
-   - [Luna Settings and Features](/settings)
-   - [Plugin Settings](/plugin-settings)
+```bash
+# List available channels/versions
+./tidaluna-installer --headless --list-versions
+
+# Install latest stable
+./tidaluna-installer --headless --install
+
+# Install specific version
+./tidaluna-installer --headless --install --version 2.1.17
+
+# Install to custom TIDAL resources path
+./tidaluna-installer --headless --install --path "/path/to/tidal/resources"
+
+# Uninstall
+./tidaluna-installer --headless --uninstall
+```
+
+On Windows, replace `./tidaluna-installer` with `./tidaluna-installer.exe` in PowerShell.
+
+## What to do next
+
+- [Installing Plugins](/install-plugins)
+- [Luna Settings and Features](/settings)
+- [Plugin Settings](/plugin-settings)
+
+## Updated screenshots to add
+
+Place screenshots in `/assets/images/` with these names:
+
+- `installer-ui-main-v3.png` — Full main installer screen showing channel/version selector, detected TIDAL path, and Install/Reinstall buttons.
+- `installer-ui-log-v3.png` — Installer with the log panel visible during or after install.
+- `installer-ui-advanced-v3.png` — Installer with **Show advanced options** enabled and custom path fields visible.
+- `mac-perms.png` — macOS **Privacy & Security -> App Management** screen showing **Terminal** enabled.

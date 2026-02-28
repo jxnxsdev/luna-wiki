@@ -6,11 +6,11 @@ description: Introduction to TidaLuna Development Documentation
 
 # TidaLuna Development Documentation
 
-If you have not set up your development environment or project yet, please refer to the [Getting Started with TidaLuna Development](/development/getting-started) guide.
+If you have not set up your project yet, start here: [Getting Started with TidaLuna Development](/development/getting-started).
 
 ## Project Overview
 
-After cloning the base project, you're ready to start developing plugins for TidaLuna. You should see the following structure:
+After cloning the base project, you are ready to build plugins. You should see this structure:
 
 - `README.md`: Contains documentation and usage information for your plugin.
 - `package.json`: Defines metadata for your plugin, such as name, version, and dependencies.
@@ -30,18 +30,22 @@ Keep in mind:
 
 ## Core Luna Libraries
 
-These libraries are available to help you build plugins:
+These are the core libraries you will use most:
 
-1. [`@luna/lib`](/development/documentation/plugins/luna-lib.md) – Core utilities for interacting with the Redux store and other frontend features.
-2. [`@luna/ui`](/development/documentation/plugins/luna-ui.md) – Standardized UI components and helpers for user interfaces.
-3. [`@luna/dev`](/development/documentation/plugins/luna-dev.md) – Development tools and helpers for building and testing plugins.
+1. [`@luna/lib`](/development/documentation/plugins/luna-lib): core renderer tools like Redux hooks, IPC wrappers, and helper classes.
+2. [`@luna/lib.native`](/development/documentation/plugins/luna-lib-native): native bridge APIs for dialogs, update/relaunch, elevation, and stream helpers.
+3. [`@luna/ui`](/development/documentation/plugins/luna-ui): shared React and MUI components, page helpers, and theme pieces.
+4. [`@luna/dev`](/development/documentation/plugins/luna-dev): debugging tools for IPC and Redux logging.
+5. [`@luna/linux`](/development/documentation/plugins/luna-linux): Linux specific integrations.
 
 ## Guides
 
-Explore these step-by-step guides to help you get started and dive deeper:
+Use these guides when you are building real plugins:
 
-1. [Simple Hello World Plugin](/development/documentation/guides/hello-world.md) – Create a basic plugin that displays a "Hello, world!" message.
-2. [Logging](/development/documentation/guides/logging.md) – Learn how to log messages properly from your plugin.
-3. [Plugin Unloading](/development/documentation/guides/plugin-unloading.md) – Handle cleanup and unloading logic for your plugin.
-4. [Plugin Settings](/development/documentation/guides/plugin-settings.md) – Build a settings page for your plugin using `Settings.tsx`.
-5. [Interacting with the Redux Store](/development/documentation/guides/redux-store.md) – Access and modify Tidal's state from your plugin.
+1. [Function Quick Reference](/development/documentation/guides/function-reference): quick lookup table for core functions.
+2. [Plugin Settings](/development/documentation/guides/plugin-settings): settings patterns used in real plugins.
+3. [Interacting with the Redux Store](/development/documentation/guides/redux-store): listen for actions and dispatch safely.
+4. [Context Menu Actions](/development/documentation/guides/context-menu): add menu actions for tracks, albums, and playlists.
+5. [Native Modules](/development/documentation/guides/native-modules): run code in `.native.ts` files.
+6. [Plugin Unloading](/development/documentation/guides/plugin-unloading): clean up DOM, timers, listeners, and native resources.
+7. [Logging](/development/documentation/guides/logging): add useful logs without spamming users.
